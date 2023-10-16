@@ -20,6 +20,7 @@ class _ListaCompostiPageState extends State<ListaCompostiPage> {
     getComposti();
   }
 
+
   void getComposti() async {
     try {
       final response = await http.get(Uri.parse("http://192.168.1.2:8080/api/listaComposti"));
